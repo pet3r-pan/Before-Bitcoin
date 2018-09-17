@@ -5,7 +5,6 @@ Exploring the ideological context of Bitcoin and the Web3 movement.
 
 - [i. Preface](https://github.com/pet3r-pan/Before-Bitcoin/blob/master/chapter-i-PREFACE.md)
 - [ii. Acknowledgements](https://github.com/pet3r-pan/Before-Bitcoin/blob/master/chapter-ii-ACKNOWLEDGEMENTS.md)
-- [iii. Required knowledge](https://github.com/pet3r-pan/Before-Bitcoin/blob/master/chapter-iii-REQUIRED-KNOWLEDGE.md)
  
  - [Chapter 0: Introduction](https://github.com/pet3r-pan/Before-Bitcoin/blob/master/chapter-0-intro.md)
  - [Chapter 1: 70s - Public key cryptography](https://github.com/pet3r-pan/Before-Bitcoin/blob/master/chapter-1-70s.md)
