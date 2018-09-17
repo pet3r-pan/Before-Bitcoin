@@ -1,5 +1,39 @@
 # 70s “Public Key Cryptography”
 
+Cash is an item or medium of exchange that is accepted and received for the exchange of goods and services, it has value as long as there is a market that is willing to accept it. Not only does cash have value because it can be traded for other goods and services, this value is also enabled through scarcity. We cannot create fiat bank notes out of thin air due to the note’s unique design and manufacturing process that is hard to replicate. If it were easy and could be counterfeited, then everyone could be able to create their own money and result in the devaluing of the money as supply is overinflated.
+
+While scarcity of physical bank notes, are protected by an unique manufacturing process that ensures protects against counterfeit-ability, this property of cash is much more difficult to replicate digitally as code, files and information in general can easily be copy pasted to and from anywhere at will.
+
+Rather than ink, Bitcoin’s digital scarcity, as medium of exchange, is enabled by cryptography. Cryptography is the practice of secret and secure communication. Existing for thousands of years, it is a practice which uses mathematics and probability to secure information. Cryptography involves ensuring...
+
+Confidentiality (keeping information a secret to eavesdroppers)
+Authentication (verifying the correct origin of information)
+Integrity (proving that information has not been tampered with)
+Nonrepudiation (proving the author of signed information)
+While bitcoin not only is heavily dependant on the cryptography, its ideological beginnings were heavily intertwined the conception of public key cryptography.
+
+Public key cryptography is a cryptographic key system separates the functions of a symmetrical cipher key into their respective functions: public key and a private key. It solves the key distribution problem involved with the symmetrical encryption. Okay, let's talk about what that exactly means…
+
+Encryption is a mathematical algorithm that renders information unusable. It produces an output called a cipher text. It can be unscrambled or decrypted to produce the original input known as the plain-text.
+
+encryption(Plain-text) = Cipher-text
+decryption(Cipher-text) = Plain-text
+The inner workings and mechanics of these algorithms are public knowledge... So if the algorithms are known, can’t anyone decrypt the encrypted information?
+
+Encryption algorithms uses a secret key or 'password' to secure the information. Unless someone has the key, they cannot decrypt the information. There are two types of encryption algorithms which manage keys differently: symmetrical and asymmetrical algorithms.
+
+Symmetric algorithms secure their information with a key where is also used for the decryption of cipher-texts as described in notation below:
+
+encryption(key1, Plain-text) = Cipher-text
+decryption(key1, Cipher-text) = Plain-text
+The problem with symmetrical encryption is that if person A wants to use the encryption algorithm to communicate with person B, they both have to have the secret key to decrypt the encrypted messages. Only once their key has been exchanged, will they be able to communicate in secret. The problem is that this 'key exchange' cannot be done using compromised communication channels where a eavesdropper might be listening in on. This is known as the key exchange problem. Symmetrical key systems require the sharing of a sensitive secret.
+
+Public key algorithms or asymmetrical encryption algorithms, solves this problem. With public key cryptography, the encryption and decryption functions of the key are separated into two keys as opposed to being a single key with dual functionality.
+
+Since, there are two keys with their respective encryption and decryption capabilities separated, person A can simply share their encryption key or public key to person B over insecure communications without fear of compromising the confidentiality of the message. Anyone with the public key can encrypt messages. The cipher-text can also be freely intercepted but cannot be decrypted without the decryption key. Person B receives person A’s public key and now can use that to encrypt his own message to produce a cipher-text. Person B sends back the cipher-text back to person A where Person A then decrypts the cipher-text using their own decryption key or private key. Person A’s private key is at no point at risk of compromise as opposed to the symmetrical key exchange. The sensitive secret in this case neither moves or is exchanged.Public key encryption is used for sending secure messages over insecure communications. They are also used for digital signatures and is the underlying concept that validates transactions on a public ledger.
+
+Public key cryptography was a monumental…
+
 To understand cryptocurrency and its history, we must go back into the 70s by exploring the historical and scientific significance of public key cryptography’s invention. It is at the heart of modern day cryptography, both for privacy and authentication. Not only was the invention technologically significant but the nature of the open publication led to the first real modern wave of interest into the field of cryptography. The inventors would spark a technological revolution that would be carried on into the the future, down to this very day, eventually becoming a movement that would change the world.
 
 Before the 70s, cryptography was primarily only used by the military to secure communications. After WWII, as the United States and Allied nations such as the United kingdom reigned victorious, they led the world in cryptographic research and practice. However despite this, all research was classified by the intelligence agencies of the likes of GCHQ, the NSA, and the Russian GRU. During the period between the 1940s and 1970s, there was little publicly released cryptographic literature as knowledge was tightly controlled. In the US, it was regulated under the Munitions Act which classified cryptographic information as a military munition where public access to such information was stringently controlled by the the NSA.
@@ -125,3 +159,4 @@ Fittingly, the first line of the paper began:
 “We stand today on the brink of a revolution in cryptography” 
 
 https://conservancy.umn.edu/bitstream/handle/11299/107353/oh375mh.pdf
+
