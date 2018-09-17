@@ -32,9 +32,7 @@ Public key algorithms or asymmetrical encryption algorithms, solves this problem
 
 Since, there are two keys with their respective encryption and decryption capabilities separated, person A can simply share their encryption key or public key to person B over insecure communications without fear of compromising the confidentiality of the message. Anyone with the public key can encrypt messages. The cipher-text can also be freely intercepted but cannot be decrypted without the decryption key. Person B receives person A’s public key and now can use that to encrypt his own message to produce a cipher-text. Person B sends back the cipher-text back to person A where Person A then decrypts the cipher-text using their own decryption key or private key. Person A’s private key is at no point at risk of compromise as opposed to the symmetrical key exchange. The sensitive secret in this case neither moves or is exchanged.Public key encryption is used for sending secure messages over insecure communications. They are also used for digital signatures and is the underlying concept that validates transactions on a public ledger.
 
-Public key cryptography was a monumental…
-
-To understand cryptocurrency and its history, we must go back into the 70s by exploring the historical and scientific significance of public key cryptography’s invention. It is at the heart of modern day cryptography, both for privacy and authentication. Not only was the invention technologically significant but the nature of the open publication led to the first real modern wave of interest into the field of cryptography. The inventors would spark a technological revolution that would be carried on into the the future, down to this very day, eventually becoming a movement that would change the world.
+Public key cryptography is at the heart of modern day cryptography, both for privacy and authentication. Not only was the invention technologically significant but the nature of the open publication led to the first real modern wave of interest into the field of cryptography. This was the first would be step that would ripple on and begin the rolling movement of digital liberty. It would spark a technological revolution that would be carried on into the the future, down to this very day, eventually becoming a movement that would change the world.
 
 Before the 70s, cryptography was primarily only used by the military to secure communications. After WWII, as the United States and Allied nations such as the United kingdom reigned victorious, they led the world in cryptographic research and practice. However despite this, all research was classified by the intelligence agencies of the likes of GCHQ, the NSA, and the Russian GRU. During the period between the 1940s and 1970s, there was little publicly released cryptographic literature as knowledge was tightly controlled. In the US, it was regulated under the Munitions Act which classified cryptographic information as a military munition where public access to such information was stringently controlled by the the NSA.
 
@@ -43,8 +41,9 @@ There was little to no public research of cryptography before then. [This overlo
 So how did it happen? What drove this open publication?
 
 First, let us follow the story of Martin Hellman.
-Martin Hellman
+
 Hellman was exposed to science at an early age by his father, a physics teacher at a New York City high school.
+
 
 “My Father had books on the bookshelf that I would pull down and read about things. Including one I remember, Ganot’s Physics, an old physics text from the 1890s that he bought. Obviously it was an antique even for him. And my seventh grade science fair project came out of that. So I was interested in science, but not particularly cryptography, and I loved math too.”
 
