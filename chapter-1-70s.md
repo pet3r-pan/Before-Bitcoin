@@ -2,22 +2,24 @@
 
 Cash is an item or medium of exchange that is accepted and received for the exchange of goods and services, it has value as long as there is a market that is willing to accept it. Not only does cash have value because it can be traded for other goods and services, this value is also enabled through scarcity. We cannot create fiat bank notes out of thin air due to the note’s unique design and manufacturing process that is hard to replicate. If it were easy and could be counterfeited, then everyone could be able to create their own money and result in the devaluing of the money as supply is overinflated.
 
-While scarcity of physical bank notes, are protected by an unique manufacturing process that ensures protects against counterfeit-ability, this property of cash is much more difficult to replicate digitally as code, files and information in general can easily be copy pasted to and from anywhere at will.
+While scarcity of physical bank notes, are protected by an unique manufacturing process that ensures protects against counterfeit-ability, this property of cash is much more difficult to replicate digitally. Code, files and information in general can be easily copied to and from anywhere at will as opposed to a specifically inked note design.Rather than ink, Bitcoin’s digital scarcity as medium of exchange, is enabled by cryptography. 
 
-Rather than ink, Bitcoin’s digital scarcity, as medium of exchange, is enabled by cryptography. Cryptography is the practice of secret and secure communication. Existing for thousands of years, it is a practice which uses mathematics and probability to secure information. Cryptography involves ensuring...
+Cryptography is the practice of secret and secure communication. Existing for thousands of years, it is a practice which uses mathematics and probability to secure information. Cryptography involves ensuring...
 
 Confidentiality (keeping information a secret to eavesdroppers)
 Authentication (verifying the correct origin of information)
 Integrity (proving that information has not been tampered with)
 Nonrepudiation (proving the author of signed information)
-While bitcoin not only is heavily dependant on the cryptography, its ideological beginnings were heavily intertwined the conception of public key cryptography.
 
-Public key cryptography is a cryptographic key system separates the functions of a symmetrical cipher key into their respective functions: public key and a private key. It solves the key distribution problem involved with the symmetrical encryption. Okay, let's talk about what that exactly means…
+While bitcoin not only is heavily dependant on the cryptography, its ideological beginnings were heavily intertwined with the path of Bitcoin itself.
+
+Public key cryptography is an assymetric cryptographic key system where two different distinct keys function as the encryption and decryption key as opposed to a symmetric key system. Okay, let's talk about what that exactly means…
 
 Encryption is a mathematical algorithm that renders information unusable. It produces an output called a cipher text. It can be unscrambled or decrypted to produce the original input known as the plain-text.
 
 encryption(Plain-text) = Cipher-text
 decryption(Cipher-text) = Plain-text
+
 The inner workings and mechanics of these algorithms are public knowledge... So if the algorithms are known, can’t anyone decrypt the encrypted information?
 
 Encryption algorithms uses a secret key or 'password' to secure the information. Unless someone has the key, they cannot decrypt the information. There are two types of encryption algorithms which manage keys differently: symmetrical and asymmetrical algorithms.
@@ -26,24 +28,24 @@ Symmetric algorithms secure their information with a key where is also used for 
 
 encryption(key1, Plain-text) = Cipher-text
 decryption(key1, Cipher-text) = Plain-text
+
 The problem with symmetrical encryption is that if person A wants to use the encryption algorithm to communicate with person B, they both have to have the secret key to decrypt the encrypted messages. Only once their key has been exchanged, will they be able to communicate in secret. The problem is that this 'key exchange' cannot be done using compromised communication channels where a eavesdropper might be listening in on. This is known as the key exchange problem. Symmetrical key systems require the sharing of a sensitive secret.
 
 Public key algorithms or asymmetrical encryption algorithms, solves this problem. With public key cryptography, the encryption and decryption functions of the key are separated into two keys as opposed to being a single key with dual functionality.
 
-Since, there are two keys with their respective encryption and decryption capabilities separated, person A can simply share their encryption key or public key to person B over insecure communications without fear of compromising the confidentiality of the message. Anyone with the public key can encrypt messages. The cipher-text can also be freely intercepted but cannot be decrypted without the decryption key. Person B receives person A’s public key and now can use that to encrypt his own message to produce a cipher-text. Person B sends back the cipher-text back to person A where Person A then decrypts the cipher-text using their own decryption key or private key. Person A’s private key is at no point at risk of compromise as opposed to the symmetrical key exchange. The sensitive secret in this case neither moves or is exchanged.Public key encryption is used for sending secure messages over insecure communications. They are also used for digital signatures and is the underlying concept that validates transactions on a public ledger.
+Since, there are two keys with seperate encryption and decryption capabilities, person A can simply share their encryption key or public key to person B over insecure communications without fear of compromising the confidentiality of the message. Anyone with the public key can encrypt messages. The cipher-text can also be freely intercepted but cannot be decrypted without the decryption key. Person B receives person A’s public key and now can use that to encrypt his own message to produce a cipher-text. Person B sends back the cipher-text back to person A where Person A then decrypts the cipher-text using their own decryption key or private key. Person A’s private key is at no point at risk of compromise as opposed to the symmetrical key exchange. The sensitive secret in this case neither moves or is exchanged.Public key encryption is used for sending secure messages over insecure communications. They are also used for digital signatures and is the underlying concept that validates transactions on a public ledger.
 
-Public key cryptography is at the heart of modern day cryptography, both for privacy and authentication. Not only was the invention technologically significant but the nature of the open publication led to the first real modern wave of interest into the field of cryptography. This was the first would be step that would ripple on and begin the rolling movement of digital liberty. It would spark a technological revolution that would be carried on into the the future, down to this very day, eventually becoming a movement that would change the world.
+Public key cryptography is at the heart of modern day cryptography, right at the heart of Bitcoin and most cryptocurrenies in general. The creation of public key cryptography would be the first step that would ripple on and to spark a technological revolution that would be carried on into the the future, down to this very day.
 
-Before the 70s, cryptography was primarily only used by the military to secure communications. After WWII, as the United States and Allied nations such as the United kingdom reigned victorious, they led the world in cryptographic research and practice. However despite this, all research was classified by the intelligence agencies of the likes of GCHQ, the NSA, and the Russian GRU. During the period between the 1940s and 1970s, there was little publicly released cryptographic literature as knowledge was tightly controlled. In the US, it was regulated under the Munitions Act which classified cryptographic information as a military munition where public access to such information was stringently controlled by the the NSA.
+Before the 70s, cryptography was primarily only used by the military to secure communications. After WWII, as the United States and Allied nations such as the United kingdom reigned victorious, they led the world in cryptographic research and practice. However despite this, all research was classified by the intelligence agencies of the likes of GCHQ, the NSA, and the Russian GRU. During the period between the 1940s and 1970s, there was little publicly released cryptographic literature as knowledge was tightly controlled. In the US, it was regulated under the Munitions Act, a piece of legislation that classified cryptographic information as a military munition where public access to such information was stringently controlled by the the NSA.
 
-There was little to no public research of cryptography before then. [This overlooks IBM’s work, which laid an important foundation for our own. Look into it: Feistel, Lucifer, his Scientific American article, DES.] It was all closed source. This was until three researchers Martin Hellman, Whitfield Diffie and Ralph Merkle, came together to invent the concept of public key cryptography. Their creation was not only of scientific significance but its open and public publication sparked a cryptographic revolution that would ripple on till this day...
+There was little to no public research of cryptography before then aside  [This overlooks IBM’s work, which laid an important foundation for our own. Look into it: Feistel, Lucifer, his Scientific American article, DES.] It was all closed source. This was until three researchers Martin Hellman, Whitfield Diffie and Ralph Merkle, came together to invent the concept of public key cryptography. Their creation was not only of scientific significance but its open and public publication sparked a cryptographic revolution that would ripple on till this day...
 
 So how did it happen? What drove this open publication?
 
 First, let us follow the story of Martin Hellman.
 
 Hellman was exposed to science at an early age by his father, a physics teacher at a New York City high school.
-
 
 “My Father had books on the bookshelf that I would pull down and read about things. Including one I remember, Ganot’s Physics, an old physics text from the 1890s that he bought. Obviously it was an antique even for him. And my seventh grade science fair project came out of that. So I was interested in science, but not particularly cryptography, and I loved math too.”
 
